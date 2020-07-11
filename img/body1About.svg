@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="359" height="132" viewBox="0 0 359 132">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #000;
+        stroke-width: 6px;
+        font-size: 120px;
+        font-family: Helvetica-Bold, Helvetica;
+        font-weight: 700;
+        opacity: 0.05;
+      }
+    </style>
+  </defs>
+  <text id="About" class="cls-1" transform="translate(6 98)"><tspan x="0" y="0">About</tspan></text>
+</svg>
