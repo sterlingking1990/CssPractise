@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="651" height="130" viewBox="0 0 651 130">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #000;
+        stroke-width: 5px;
+        font-size: 120px;
+        opacity: 0.05;
+      }
+
+      .cls-1, .cls-2 {
+        font-family: Helvetica-Bold, Helvetica;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        font-size: 32px;
+      }
+    </style>
+  </defs>
+  <g id="Group_910" data-name="Group 910" transform="translate(-647.5 -2032)">
+    <text id="Experience" class="cls-1" transform="translate(652.5 2129)"><tspan x="0" y="0">Experience</tspan></text>
+    <text id="Course_Experience" data-name="Course Experience" class="cls-2" transform="translate(829 2106)"><tspan x="0" y="0">Course Experience</tspan></text>
+  </g>
+</svg>
