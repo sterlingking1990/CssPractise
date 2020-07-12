@@ -21,7 +21,6 @@ body{
 .header{
     display: flex;
     background-color: black;
-    height: 100%;
 }
 
 .header-logo{
@@ -35,6 +34,12 @@ body{
 .header-menu{
     display: flex;
 }
+
+.hamburger-menu{
+    display: none;
+}
+
+
 
 
 .header-menu ul{
@@ -263,6 +268,7 @@ body{
     margin: 0;
 
 }
+
 .body-two-card-title-image{
     margin-top: 40px;
     width: 400px;
@@ -283,6 +289,10 @@ body{
     height: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr auto;
+}
+
+.body-two-card-horizontal-content-mobile{
+    display: none;
 }
 
 .body-two-card-horizontal-content-1{
@@ -367,5 +377,282 @@ line-height: 32px;
 width: 610px;
 }
 
+@media only screen and (max-device-width : 599px) and (orientation : portrait), only screen and (max-device-width : 1200px){ 
+    body{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
 
+    .section{ 
+        background-color: black;
+        height: 1250px;
+        width: 1200px;
+        margin: 0 auto;
+    
+    }
+
+    .hero-one{
+        background-color: white;
+        border: 5px;
+        border-radius: 25px;
+        margin-top: 3em;
+        max-height: fit-content;
+        position: absolute;
+        width: 980px;
+        margin-left: -1em;
+        
+    
+    }
+    .hero-one-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 100px;
+        
+    }
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+
+    .body-one-top :nth-child(3){
+        padding-left: 150px;
+        padding-top: 150px;
+        width:20px;
+    }
+
+    .header-logo{
+        width: 15%;
+        margin-top: 5em;
+        margin-left: 400px;
+    }
+
+
+
+    .hamburger-menu{
+        display: none;
+    }
+
+    .body-two-card-horizontal-content-mobile{
+        display: none;
+    }
+}
+
+@media only screen and (max-device-width : 152px) {
+
+.section{ 
+    background-color: black;
+    height: 675px;
+    width: 600px;
+    margin: 0 auto;
+
+}
+
+.header-menu{
+    display: none;
+}
+
+.hamburger-menu{
+    display: block;
+    color: white;
+
+}
+
+#header-button{
+    align-self: center;
+    padding-top: 1em;
+    font-size: smaller; 
+    font-weight: 400;
+    width: 100px;
+    word-spacing: 2em;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.body-one-top{
+    margin:0;
+    padding-top: 13em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.body-one-abs{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.body-one-abs-image{
+    display: none;
+}
+
+.body-one-top-about-and-image{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-one{
+    background-color: white;
+    border: 5px;
+    border-radius: 25px;
+    margin-top: 3em;
+    height: 1150px;
+    position: absolute;
+    width: 500px;
+    margin-left: -1em;
+    
+
+}
+.hero-one-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px;
+    
+}
+
+.hero-one-left-content h1{
+    font-size: 30px;
+    font-stretch: extra-expanded;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.hero-one-content p{
+    height: 100px;
+    line-height: 2em;
+    font-size: 20px;
+    width: 440px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.hero-one-left-content img{
+    width:20em;
+    margin-top: -3em;
+}
+
+.hero-one-right-content{
+    width: 18em;
+}
+
+.section-second-layer{
+    margin:0; 
+    z-index: -1;
+    position: absolute;
+    width: 600px;
+    background-color: #FAFAFA;
+    height: 1000px;
+}
+
+.body-one-top{
+    margin:0 ;
+    padding-top: 40em;
+    display: flex;
+    flex-direction: row;
+}
+
+.body-two-card{
+    background-color: white;
+    border: 5px;
+    border-radius: 25px;
+    border-bottom: 25px;
+    height: 500px;
+    margin-top: 1200px;
+
+}
+.body-one-top-about-and-image{
+    width: 100px;
+}
+.body-one-top-about-social{
+    margin-left: 10em;
+}
+
+.body-one-bottom p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 2em;
+    width: 500px;
+    font-weight: lighter;
+    padding-left: 1em;
+    padding-top: 170px;
+}
+.body-two-card-main-content-image{
+    display: none;
+}
+
+.body-two-card-main-content-text{
+    line-height: 2em;
+    width: 400px;
+    padding-left: 1em;
+}
+
+.body-two-card-title-image{
+    margin-top: 40px;
+    width: 400px;
+    margin-left: 7em;
+    position: absolute;
+}
+
+.body-two-card-title-text{
+    width: 200px;
+    margin-top: 65px;
+    z-index: 1;
+    margin-left: 9.5em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: x-large;
+}
+
+.body-two-card-horizontal-content-mobile{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    justify-content: space-around;
+}
+.body-two-card-horizontal-content{
+    display: none;
+}
+
+.body-two-card-horizontal-content-1{
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    height: 40px;
+    width: 200px;
+    margin-left: 1px;
+
+}
+.body-two-card-horizontal-content-2{
+    border: 1px solid black;
+    height: 40px;
+    width: 200px;
+    margin-left:1px;
+}
+
+.body-two-card-horizontal-content-3{
+    background-color: black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 40px;
+    width: 200px;
+    margin-left: 1px;
+
+}
+.body-two-card-main-content-text{
+    width: 350px;
+}
+
+.body-two-card-main-content-text p{
+    width: 350px;
+}
+}
 
