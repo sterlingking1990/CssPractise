@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Replica CSS</title>
     <link rel="stylesheet"  type="text/css" href="css/style.css"/>
+    
 </head>
 <body>
     <div class="section">
@@ -25,7 +26,23 @@
                     </ul>
                     <span id="header-button">Register</span>
                 </div>
-                <div class="hamburger-menu">menu</div>
+                <div class="hamburger-menu" id="transform-menu">&nbsp;
+                    <div class="hamburger-menu-first"></div>
+                    <div class="hamburger-menu-middle"></div>
+                    <div class="hamburger-menu-last"></div>
+                </div>
+                    <div class="header-menu-small-screen" id="small-screen-menu">
+                        <ul class="screen-menu">
+                            <li class="screen-menu-item">Product</li>
+                            <li class="screen-menu-item">Partners</li>
+                            <li class="screen-menu-item">FAQ</li>
+                            <li class="screen-menu-item">Masters</li>
+                            <li class="screen-menu-item">Classes</li>
+                            <li class="screen-menu-item">Course Experience</li>
+                            <li class="screen-menu-item">About Us</li>
+                            <li class="screen-menu-item">Register</li>
+                         </ul>
+                    </div>
             </div>
         </div>
         <div class="container">
@@ -126,4 +143,26 @@
         </div>
     </div>
 </body>
+<script>
+    if(screen.width>150){
+        document.getElementById("small-screen-menu").style.display="none"
+    }
+    document.querySelector('.hamburger-menu').addEventListener('click',function(){
+        if(document.getElementById("transform-menu").style.transform){
+            document.getElementById("transform-menu").style.transform=""
+            document.getElementById("small-screen-menu").style.display="none"
+
+        }
+        else{
+        document.getElementById("transform-menu").style.transform="rotate(20deg)" 
+        document.getElementById("small-screen-menu").style.width="120px"
+        document.getElementById("small-screen-menu").style.display="flex"
+        document.getElementById("small-screen-menu").style.flex="column"
+        document.getElementById("small-screen-menu").style.color="white"
+        document.getElementById("small-screen-menu").style.marginTop="10px"
+        document.getElementById("small-screen-menu").firstElementChild.style.listStyle="none"
+        }
+    })
+    
+</script>
 </html>
